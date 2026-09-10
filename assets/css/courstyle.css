@@ -540,7 +540,7 @@ main {
 }
 
 .currentex-img{
-    background-image: url(/images/beauti.jpg);
+    background-image: url(../../images/beauti.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 30px;
