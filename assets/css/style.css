@@ -180,7 +180,7 @@ main{
 
 
 .explorimgg{
-    background-image: url(images/Stanleydopsleutel27mm1.png);
+    background-image: url(../../images/Stanleydopsleutel27mm1.png);
     background-size: cover;
     background-position: center;
     width: 180px;
@@ -213,7 +213,7 @@ main{
 .hero-imagae{
     width: 40%;
     height: 100%;
-    background-image: url(images/MAluminium1.png);
+    background-image: url(../../images/MAluminium1.png);
     background-position: center;
     background-size: cover;
     border-radius: 25px;
@@ -335,7 +335,7 @@ main{
 }
 
 .currentex-img{
-    background-image: url(/images/beauti.jpg);
+    background-image: url(../../images/beauti.jpg);
     background-position: center;
     background-size: cover;
     height: 100%;
