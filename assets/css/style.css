@@ -540,19 +540,19 @@ main{
 
 .diiv1 {
     grid-area: 1 / 1 / 4 / 2; 
-    background-image: url(/images/powerbi.jpg);
+    background-image: url(../../images/powerbi.jpg);
 }
 .diiv2 {
     grid-area: 1 / 2 / 3 / 3; 
-    background-image: url(/images/excel-mastery.jpg);
+    background-image: url(../../images/excel-mastery.jpg);
 }
 .diiv3 {
     grid-area: 3 / 2 / 5 / 3; 
-    background-image: url(/images/sql-training.jpg);
+    background-image: url(../../images/sql-training.jpg);
 }
 .diiv4 {
     grid-area: 2 / 3 / 5 / 4; 
-    background-image: url(/images/data-analysis.jpg);
+    background-image: url(../../images/data-analysis.jpg);
 }
 
 /* 
