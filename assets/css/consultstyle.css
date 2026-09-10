@@ -1,0 +1,338 @@
+/* Layout Structure */
+.consult-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 20px 80px 20px;
+}
+
+.consult-hero {
+    padding-top: 50px;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px auto;
+}
+
+.consult-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.consult-hero em {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: var(--blue-primary, #022bff);
+}
+
+.hero-desc {
+    color: #666;
+    margin-top: 15px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Two-Column Grid */
+.consultation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Form Panel */
+.form-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.form-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.field-group label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #475569;
+}
+
+.field-group.highlight-field label {
+    color: #022bff;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    background-color: #f8fafc;
+    font-size: 0.95rem;
+    color: #0f172a;
+    transition: all 0.25s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #022bff;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(2, 43, 255, 0.08);
+}
+
+.field-group.highlight-field .form-input {
+    border-color: #93c5fd;
+    background-color: #f0f7ff;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    border-radius: 50px;
+    background-color: #022bff;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #001fcc;
+    transform: translateY(-2px);
+}
+
+/* Dynamic Outline Display Panel */
+.outline-display-card {
+    background: linear-gradient(145deg, #020b26 0%, #031b5e 100%);
+    border-radius: 20px;
+    padding: 40px;
+    color: #ffffff;
+    min-height: 580px;
+    position: sticky;
+    top: 100px;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder State */
+.placeholder-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 500px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.placeholder-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    opacity: 0.5;
+}
+
+.placeholder-state h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.placeholder-state p {
+    max-width: 320px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Content Active State */
+.dynamic-content-state {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dynamic-content-state.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.badge-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-type {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.badge-duration {
+    background: #00f2fe;
+    color: #020b26;
+}
+
+#out-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.out-desc {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.out-section {
+    margin-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.out-section h4 {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #4facfe;
+    margin-bottom: 12px;
+}
+
+/* Tools Pills */
+.tools-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tool-pill {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+
+}
+
+/* Module & Deliverable Lists */
+.module-list, .deliverable-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.module-list li, .deliverable-list li {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.4;
+}
+
+.module-list li::before {
+    content: "➔";
+    position: absolute;
+    left: 0;
+    color: #00f2fe;
+    font-size: 0.8rem;
+}
+
+.deliverable-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4facfe;
+    font-size: 0.85rem;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+}
+
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+    fill: #ffffff;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .consultation-grid {
+        grid-template-columns: 1fr;
+    }
+    .outline-display-card {
+        position: static;
+        min-height: auto;
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Tighter Margins */
+    header { 
+        padding: 15px 20px; 
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .consult-container { 
+        
+        padding-top: 120px;
+    }
+    .currentex-img{
+        height: 300px;
+    }
+
+    .code-snippet-preview{
+        overflow: hidden;
+    }
+    
+    /* Hide desktop nav to prevent crowding (Optional: can add a hamburger menu later) */
+    .headernav { align-items: center; }
+}

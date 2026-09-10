@@ -14,7 +14,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 130px;
+    padding: 15px 130px;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,17 +36,17 @@ header.scrolled {
     font-weight: 100;
     letter-spacing: -1px;
 }
-
-.logo img{
-    width: 40px;
-    height: 40px;
+.logo img {
+    width: 36px;
+    height: 36px;
     margin-right: 10px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .headernav{
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 
 .headernav a{
@@ -54,16 +54,23 @@ header.scrolled {
     color: #4a4a4a;
     font-size: 0.9rem;
     letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.2s ease;
 }
 
 .header-joinbtn {
-    padding: 8px 25px;
-    border-radius: 10px;
-    /* Changed from orange to StatHub Royal Blue */
+    padding: 10px 26px;
+    border-radius: 12px;
     background-color: #022BFF; 
-    color: #F8F8F8;
-    border: 1px solid transparent;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
     cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    text-decoration: none;
 }
 
 main{
@@ -233,6 +240,7 @@ main{
     cursor: pointer;
     background-color: #F8F8F8;
     color: #F8F8F8;
+    text-decoration: none;
 }
 
 .bttgn{
@@ -327,7 +335,7 @@ main{
 }
 
 .currentex-img{
-    background-image: url(images/beauti.jpg);
+    background-image: url(/images/beauti.jpg);
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -385,8 +393,17 @@ main{
 .resbtn{
     padding: 15px;
     border-radius: 30px;
-    border: 1px solid #838383;
+    border: 1px solid #022BFF;
     font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    color: #022BFF;
+    transition: ease-in 0.2s;
+}
+
+.resbtn:hover{
+    background-color: #022BFF;
+    color: #fff;
 }
 
 
@@ -426,6 +443,7 @@ main{
     font-size: 1.2rem;
     color: #4a4a4a;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .nav-btn:hover {
@@ -460,6 +478,17 @@ main{
     flex-direction: column;
     gap: 8px;
     flex-shrink: 0; /* Prevents cards from squishing */
+    text-decoration: none;
+}
+
+.prev-btn:hover{
+    background-color: #022BFF;
+    color: #fff;
+}
+
+.next-btn:hover{
+    background-color: #022BFF;
+    color: #fff;
 }
 
 .abspa{
@@ -511,19 +540,19 @@ main{
 
 .diiv1 {
     grid-area: 1 / 1 / 4 / 2; 
-    background-image: url(images/powerbi.jpg);
+    background-image: url(/images/powerbi.jpg);
 }
 .diiv2 {
     grid-area: 1 / 2 / 3 / 3; 
-    background-image: url(images/excel-mastery.jpg);
+    background-image: url(/images/excel-mastery.jpg);
 }
 .diiv3 {
     grid-area: 3 / 2 / 5 / 3; 
-    background-image: url(images/sql-training.jpg);
+    background-image: url(/images/sql-training.jpg);
 }
 .diiv4 {
     grid-area: 2 / 3 / 5 / 4; 
-    background-image: url(images/data-analysis.jpg);
+    background-image: url(/images/data-analysis.jpg);
 }
 
 /* 
@@ -575,6 +604,7 @@ main{
     align-items: center;
     padding: 30px 20px;
     border-bottom: 1px solid #dcdcdc;
+    text-decoration: none;
 }
 
 .active-event {
@@ -815,7 +845,7 @@ main{
 
 .footer-divider {
     height: 1px;
-    background-color: #222;
+    background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 30px;
 }
 

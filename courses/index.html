@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses & Learning Paths | StatHub</title>
+    <link rel="stylesheet" href="/assets/css/courstyle.css">
+    
+</head>
+<body>
+    
+    <!-- HEADER NAVBAR -->
+    <header id="header">
+        <a href="/" class="logo">
+            <img src="/images/logo.jpg" alt="StatHub Logo">
+        </a>
+
+        <nav class="headernav">
+            <a href="/courses/" class="nav-link active">COURSES</a>
+            <a href="/consultation/" class="nav-link">CONSULTATION</a>
+            <a href="#" class="nav-link">ABOUT</a>
+        </nav>
+
+       <a href="/consultation/" class="header-joinbtn">ENROLL</a>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section class="hero-courses">
+            <div class="hero-roback">
+                <div class="herotextsses">
+                    <div class="imagechange-circles">
+                        <span class="eyebrow-tag">STAT HUB / ENTERPRISE & ACADEMIA</span>
+                        <p>EDUTECH · ARP INFRASTRUCTURE · RESEARCH · ML</p>
+                    </div>
+
+                    <div class="her-modere">
+                        <h2>
+                            ADVANCED DATA<br>
+                            <em>SOLUTIONS &</em><br>
+                            RESEARCH SKILLS<br>
+                            <span class="text-blue">FOR ALL.</span>
+                        </h2>
+                    </div>
+
+                    <div class="hero-course-sub">
+                        <p class="hero-description">
+                            From live technical training and academic research support (Undergrad, MSc, PhD) to corporate upskilling, machine learning models, and ARP analytical infrastructure.
+                        </p>
+
+                        <div class="hero-action-group">
+                            <a href="#capabilities" class="btn-primary-blue">
+                                OUR CAPABILITIES <span>&#8594;</span>
+                            </a>
+                            <a href="#consultilation" class="btn-secondary-outline">
+                                TALK TO STAT HUB
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Editorial Visual Composition -->
+                <div class="hero-visual-card">
+                    <div class="editorial-art-composition">
+                        <div class="art-badge-top">
+                            <span class="badge-dot"></span> LIVE COHORTS 2026
+                        </div>
+                        
+                        <div class="code-snippet-preview">
+                            <div class="code-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                                <span class="code-title">stathub_query.sql</span>
+                            </div>
+                            <pre><code><span class="sql-kw">SELECT</span> student_id, <span class="sql-fn">AVG</span>(insight_score)
+<span class="sql-kw">FROM</span> stathub_cohorts
+<span class="sql-kw">WHERE</span> skill = <span class="sql-str">'Power BI'</span>
+<span class="sql-kw">GROUP BY</span> 1;</code></pre>
+                        </div>
+
+                        <div class="editorial-stat-card">
+                            <p class="stat-num">98.4%</p>
+                            <p class="stat-label">Practical Project Completion</p>
+                        </div>
+
+                        <div class="imaa-bluuff">
+                            <button class="nav-btn immabtn">&#8594;</button>
+                            <div class="immablu">
+                                <p class="traaps"><small>CURRICULUM ARCHITECTURE</small></p>
+                                <p class="traas">Industry-Ready Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CORE CAPABILITIES (BEYOND COURSES) -->
+        <section class="capabilities-sect" id="capabilities">
+            <div class="section-label-group">
+                <hr class="section-hr">
+                <p class="section-eyebrow">WHAT WE DO</p>
+            </div>
+            <h2 class="secti-titll">BEYOND <em>EDUTECH.</em></h2>
+
+            <div class="capabilities-grid">
+                <!-- 1. Corporate Training -->
+                <div class="capability-card">
+                    <div>
+                        <span class="cap-tag">ENTERPRISE</span>
+                        <h3 class="cap-title">Corporate Training</h3>
+                    </div>
+                    <p>Tailored workforce analytics bootcamps, executive BI workshops, and hands-on tool upskilling designed for modern business teams.</p>
+                </div>
+
+                <!-- 2. Academic Research Support -->
+                <div class="capability-card">
+                    <div>
+                        <span class="cap-tag">ACADEMIA</span>
+                        <h3 class="cap-title">Research Consulting</h3>
+                    </div>
+                    <p>Rigorous statistical methodology, data processing, and analysis support for Undergraduate, Postgraduate, and PhD research dissertations.</p>
+                </div>
+
+                <!-- 3. ARP Infrastructure -->
+                <div class="capability-card">
+                    <div>
+                        <span class="cap-tag">SYSTEMS</span>
+                        <h3 class="cap-title">ARP Infrastructure</h3>
+                        <p class="cap-subtext">(Analysis & Research Platform)</p>
+                    </div>
+                    <p>Deployment of secure research pipelines, automated data warehouses, and custom analytics environments tailored for institution needs.</p>
+                </div>
+
+                <!-- 4. Machine Learning & AI -->
+                <div class="capability-card">
+                    <div>
+                        <span class="cap-tag">AI & ML</span>
+                        <h3 class="cap-title">Machine Learning</h3>
+                    </div>
+                    <p>Custom predictive algorithms, exploratory data modeling, natural language processing, and scalable ML workflows.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 2. COURSE CATEGORIES & FILTERING -->
+        <section class="category-filter-section" id="all-courses">
+            <div class="section-label-group">
+                <hr class="section-hr">
+                <p class="section-eyebrow">WHAT YOU CAN LEARN</p>
+            </div>
+            
+            <div class="filter-header-row">
+                <h2 class="secti-titll" id="btn-build-toolkit">BUILD YOUR <em>DATA TOOLKIT.</em></h2>
+                
+                <!-- Dynamic Filters -->
+                <div class="filter-bar" id="course-filter-bar">
+                    <button class="filter-btn active" data-category="ALL">ALL</button>
+                    <button class="filter-btn" data-category="DATA ANALYSIS">DATA ANALYSIS</button>
+                    <button class="filter-btn" data-category="BUSINESS INTELLIGENCE">BUSINESS INTELLIGENCE</button>
+                    <button class="filter-btn" data-category="SPREADSHEETS">SPREADSHEETS</button>
+                    <button class="filter-btn" data-category="STATISTICS">STATISTICS</button>
+                    <button class="filter-btn" data-category="PROGRAMMING">PROGRAMMING</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. FEATURED COURSE SECTION -->
+        <section class="featured-course-sect">
+            <div class="currennn-title">
+                <div>
+                    <span class="currsmal">FEATURED COHORT</span>
+                    <h3 class="secti-titll">ADVANCED EXCEL FOR DATA ANALYSIS</h3>
+                </div>
+                <div class="currenne-date">
+                    <p>ENROLLMENT OPEN</p>
+                    <h5>SEPTEMBER 2026 COHORT</h5>
+                </div>
+            </div>
+
+            <div class="curren-exhibiiit featured-split-card" id="featured-section">
+                <div class="currentex-img featured-visual">
+                    <div class="visual-tag-overlay">
+                        <span>COURSE 01</span>
+                        <span>BOOTCAMP NO. 10</span>
+                    </div>
+                </div>
+                <div class="currentex-info">
+                    <div class="currente-partone">
+                        <p class="currsmal">SPREADSHEET MASTERY</p>
+                        <h3 class="currtitl">Advanced Excel for Data Analysis</h3>
+                        <p class="currinfot">
+                            Move beyond basic spreadsheets. Master complex formulas, dynamic arrays, Power Query data transformation, interactive reporting dashboards, and automated workflows.
+                        </p>
+                    </div>
+                    
+                    <div class="featured-specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">LEVEL</span>
+                            <span class="spec-value">INTERMEDIATE</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">FORMAT</span>
+                            <span class="spec-value">LIVE / ONLINE</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">DURATION</span>
+                            <span class="spec-value">6 WEEKS</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">NEXT COHORT</span>
+                            <span class="spec-value">SEPTEMBER</span>
+                        </div>
+                    </div>
+
+                    <div class="currshow">
+                        <hr>
+                        <p>StatHub Virtual Campus · Hands-on Projects Included</p>
+                    </div>
+                    
+                    <button class="resbtn btn-blue-fill" id="btn-featured-course">VIEW COURSE & ENROLL &#8594;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ALL COURSES GRID (Rendered Dynamically via JavaScript) -->
+        <section class="all-courses-grid-sect" id="skillcoursel">
+            <div class="selected-header">
+                <h2 class="secti-titll">CHOOSE YOUR<br><em>NEXT SKILL.</em></h2>
+                <div class="carousel-nav">
+                    <span class="course-count-indicator" id="course-count">Showing 6 Courses</span>
+                </div>
+            </div>
+
+            <!-- Dynamic Container -->
+            <div class="courses-editorial-grid" id="courses-container">
+                <!-- Javascript will insert courses here -->
+            </div>
+        </section>
+
+        <!-- 5. LEARNING PATHS SECTION -->
+        <section class="learning-paths-sect">
+            <div class="section-label-group">
+                <hr class="section-hr">
+                <p class="section-eyebrow">WHERE SHOULD YOU START?</p>
+            </div>
+            <h2 class="secti-titll paths-heading">CHOOSE YOUR <em>PATH.</em></h2>
+
+            <div class="paths-grid">
+                <!-- Path 1: Students -->
+                <div class="path-card path-students">
+                    <div class="path-card-header">
+                        <span class="path-number">PATH 01</span>
+                        <span class="path-tag">ACADEMIC & CAREER</span>
+                    </div>
+                    <div class="path-card-body">
+                        <h3>FOR STUDENTS</h3>
+                        <p>Build the practical data skills needed to excel in assignments, complete capstone projects, and stand out to top employers upon graduation.</p>
+                    </div>
+                    <div class="path-card-footer">
+                        <a href="#all-courses" class="path-link">START LEARNING &#8594;</a>
+                    </div>
+                </div>
+
+                <!-- Path 2: Researchers -->
+                <div class="path-card path-researchers">
+                    <div class="path-card-header">
+                        <span class="path-number">PATH 02</span>
+                        <span class="path-tag">METHODOLOGY & DISSERTATIONS</span>
+                    </div>
+                    <div class="path-card-body">
+                        <h3>FOR RESEARCHERS</h3>
+                        <p>Statistical validation, research design, and data analysis for Undergraduate, Postgraduate, and PhD candidates across academic disciplines.</p>
+                    </div>
+                    <div class="path-card-footer">
+                        <a href="#consultilation" class="path-link">SUBMIT RESEARCH QUERY &#8594;</a>
+                    </div>
+                </div>
+
+                <!-- Path 3: Businesses & Institutions -->
+                <div class="path-card path-businesses">
+                    <div class="path-card-header">
+                        <span class="path-number">PATH 03</span>
+                        <span class="path-tag">ENTERPRISE SOLUTIONS</span>
+                    </div>
+                    <div class="path-card-body">
+                        <h3>FOR ENTERPRISES</h3>
+                        <p>Custom corporate training programs, Machine Learning model integration, and ARP analytics infrastructure setup for scalable growth.</p>
+                    </div>
+                    <div class="path-card-footer">
+                        <a href="#consultilation" class="path-link light">REQUEST A PROPOSAL &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. THE STAT HUB APPROACH -->
+        <section class="stathub-approach-sect">
+            <div class="section-label-group">
+                <hr class="section-hr">
+                <p class="section-eyebrow">THE STAT HUB APPROACH</p>
+            </div>
+            <h2 class="secti-titll approach-main-title">LESS THEORY. <em>MORE PRACTICE.</em></h2>
+
+            <div class="approach-stages-grid">
+                <div class="stage-card">
+                    <span class="stage-num">01</span>
+                    <h4>LEARN</h4>
+                    <p>Master core principles through concise, high-density live sessions and clear visual frameworks.</p>
+                </div>
+                <div class="stage-card">
+                    <span class="stage-num">02</span>
+                    <h4>PRACTICE</h4>
+                    <p>Solve messy real-world datasets with real operational constraints and guided instructor feedback.</p>
+                </div>
+                <div class="stage-card">
+                    <span class="stage-num">03</span>
+                    <h4>BUILD</h4>
+                    <p>Construct production-grade portfolio projects, SQL databases, and interactive Power BI dashboards.</p>
+                </div>
+                <div class="stage-card">
+                    <span class="stage-num">04</span>
+                    <h4>APPLY</h4>
+                    <p>Deploy your new analytical toolkit directly into your academics, thesis work, or workplace decision-making.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. OUTCOMES / WHAT YOU WALK AWAY WITH -->
+        <section class="outcomes-sect">
+            <div class="outcomes-header">
+                <p class="section-eyebrow">WHAT YOU'LL WALK AWAY WITH</p>
+                <h2 class="secti-titll">SKILLS YOU CAN<br><em>ACTUALLY USE.</em></h2>
+            </div>
+
+            <div class="outcomes-grid">
+                <div class="outcome-box">
+                    <div class="outcome-icon">01</div>
+                    <h4>Practical Portfolio Projects</h4>
+                    <p>Build tangible, publishable case studies that demonstrate real data problem-solving capability.</p>
+                </div>
+                <div class="outcome-box">
+                    <div class="outcome-icon">02</div>
+                    <h4>Advanced Data Cleaning</h4>
+                    <p>Confidently handle unorganized, incomplete, or complex datasets with SQL and Power Query.</p>
+                </div>
+                <div class="outcome-box">
+                    <div class="outcome-icon">03</div>
+                    <h4>Executive Dashboards</h4>
+                    <p>Design interactive visual reports that synthesize complex metrics for executive decision-makers.</p>
+                </div>
+                <div class="outcome-box">
+                    <div class="outcome-icon">04</div>
+                    <h4>Statistical Rigor</h4>
+                    <p>Apply valid statistical hypothesis testing and statistical inference for research or commercial use.</p>
+                </div>
+                <div class="outcome-box">
+                    <div class="outcome-icon">05</div>
+                    <h4>Modern Tooling</h4>
+                    <p>Develop fluency across SQL, Power BI, Excel, and Python stack used in top global technology teams.</p>
+                </div>
+                <div class="outcome-box">
+                    <div class="outcome-icon">06</div>
+                    <h4>StatHub Certificate</h4>
+                    <p>Receive verified certification of skill completion recognized across academic and professional circles.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. UPCOMING COHORTS -->
+        <section class="program-visit-wrapper">
+            <p class="section-subtitle">UPCOMING COHORTS & SCHEDULE</p>
+            <div class="program-list">
+                <div class="program-item active-event">
+                    <div class="prog-info">
+                        <p class="prog-date">SEP 15, 2026</p>
+                        <h3 class="prog-title">SQL for Data Analysis<br>Beginner → Intermediate · Online Live</h3>
+                    </div>
+                    <div class="prog-time-link">
+                        <span class="prog-time">Enrollment Open</span>
+                        <button class="nav-btn">&#8594;</button>
+                    </div>
+                </div>
+
+                <div class="program-item">
+                    <div class="prog-info">
+                        <p class="prog-date">SEP 22, 2026</p>
+                        <h3 class="prog-title">Power BI Dashboard Bootcamp<br>Intermediate · Interactive Virtual</h3>
+                    </div>
+                    <div class="prog-time-link">
+                        <span class="prog-time">Enrollment Open</span>
+                        <button class="nav-btn">&#8594;</button>
+                    </div>
+                </div>
+
+                <div class="program-item">
+                    <div class="prog-info">
+                        <p class="prog-date">SEP 29, 2026</p>
+                        <h3 class="prog-title">Excel for Data Professionals<br>Advanced Functions & Automation</h3>
+                    </div>
+                    <div class="prog-time-link">
+                        <span class="prog-time">Limited Seats</span>
+                        <button class="nav-btn">&#8594;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. CONSULTATION CTA -->
+        <section class="consultation-banner-sect" id="consultilation">
+            <div class="consultation-card">
+                <div class="consultation-content">
+                    <p class="currsmal text-white">PERSONALIZED GUIDANCE</p>
+                    <h2 class="consult-title">DON'T KNOW WHERE<br>TO START?</h2>
+                    <p class="consult-text">
+                        Tell us what you are trying to learn, analyze, or achieve in your business or research. We will map out the exact learning path or custom training for you.
+                    </p>
+                    <div class="consult-actions">
+                        <a href="mailto:analysis.stathub@gmail.com" class="btn-white-fill">TALK TO STAT HUB &#8594;</a>
+                        <a href="#all-courses" class="btn-outline-white">EXPLORE ALL COURSES</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. NEWSLETTER SECTION -->
+        <section class="newsletter-section">
+            <h2>Join the Data Network</h2>
+            <p>Receive updates on new courses, scholarships, and analytical insights.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to StatHub Data Network!');">
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="about">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>StatHub</h2>
+                <p>EDUTECH · DATA ANALYSIS · CONSULTATION</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-col">
+                    <a href="https://instagram.com" target="_blank">INSTAGRAM</a>
+                    <a href="https://linkedin.com" target="_blank">LINKEDIN</a>
+                    <a href="https://twitter.com" target="_blank">TWITTER</a>
+                </div>
+                <div class="link-col">
+                    <a href="courses.html">COURSES</a>
+                    <a href="#consultation">CONSULTATION</a>
+                    <a href="#about">ABOUT US</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StatHub. All rights reserved.</p>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- COURSE DETAILS & OUTLINE MODAL -->
+    <div class="course-modal-overlay" id="course-modal" aria-hidden="true">
+        <div class="course-modal-card">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+            
+            <div class="modal-header">
+                <div class="modal-badge-row">
+                    <span class="modal-number" id="modal-num">COURSE 01</span>
+                    <span class="modal-category-badge" id="modal-tag">DATABASE</span>
+                </div>
+                <h2 class="modal-title" id="modal-title">Course Title</h2>
+                <p class="modal-desc" id="modal-desc">Course summary description goes here.</p>
+            </div>
+
+            <div class="modal-specs-grid">
+                <div class="modal-spec-item">
+                    <span class="spec-label">LEVEL</span>
+                    <span class="spec-value" id="modal-level">Intermediate</span>
+                </div>
+                <div class="modal-spec-item">
+                    <span class="spec-label">DURATION</span>
+                    <span class="spec-value" id="modal-duration">4 Weeks</span>
+                </div>
+                <div class="modal-spec-item">
+                    <span class="spec-label">FORMAT</span>
+                    <span class="spec-value" id="modal-format">Online Live</span>
+                </div>
+            </div>
+
+            <div class="modal-curriculum-section">
+                <h4 class="modal-section-heading">COURSE OUTLINE & CURRICULUM</h4>
+                <ol class="modal-outline-list" id="modal-outline-list">
+                    <!-- Dynamically populated modules -->
+                </ol>
+            </div>
+
+            <div class="modal-footer-actions">
+                <a href="#consultation" class="btn-enquire-modal" id="modal-enquire-btn">
+                    ENQUIRE MORE <span>&#8594;</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="/assets/js/courscript.js"></script>
+</body>
+</html>
